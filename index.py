@@ -64,7 +64,7 @@ with doc:
         with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
             from length_control import get_table
 
-            h3("Speech Samples with Length Control")
+            h3("Speech Samples with Source-length Control")
             p(
                 """
                 In this panel, the samples are generated with the total duration controlled the same as that of the source audios.
@@ -80,10 +80,34 @@ with doc:
         with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
             from length_control_extreme import get_table
 
-            h3("Speech Samples with Length Control -- Cases with Extreme Lengths")
+            h3("Speech Samples with Source-length Control -- Long Cases")
             p(
                 """
-                In this panel, the samples are of the same lengths as the source audios, which are extremely long due to disfluencies.
+                In this panel, the samples are of the same lengths as the source audios, which are extremely long due to potential disfluencies.
+                """,
+                cls="lead",
+            )
+            get_table()
+            p(
+                "* please scroll horizontally to explore additional columns in the table.",
+                cls="lead",
+            )
+
+        with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
+            from length_control_wo_scaling import get_table
+
+            h3("Influence of Duration Conditioning")
+            p(
+                """
+                These samples are intended to check the influence of the duration condition.
+                The codition values are 0.5x, 1.0x, and 1.5x of the source average duration.\n
+                """,
+                cls="lead",
+            )
+            p(
+                """
+                The duration values are generated without post-processing scaling.
+                The samples were not deployed in the subjective evaluation.
                 """,
                 cls="lead",
             )

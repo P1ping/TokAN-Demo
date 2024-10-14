@@ -441,7 +441,7 @@
           <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
         </div>
         <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-          <h3>Speech Samples with Length Control</h3>
+          <h3>Speech Samples with Source-duration Control</h3>
           <p class="lead">
                 In this panel, the samples are generated with the total duration controlled the same as that of the source audios.
                 </p>
@@ -858,7 +858,7 @@
           <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
         </div>
         <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-          <h3>Speech Samples with Length Control -- Cases with Extreme Lengths</h3>
+          <h3>Speech Samples with Source-duration Control -- Long Cases</h3>
           <p class="lead">
                 In this panel, the samples are of the same lengths as the source audios, which are extremely long due to disfluencies.
                 </p>
@@ -1074,6 +1074,429 @@
                   <td>
                     <audio controls="" preload="none" style="width: 240px">
                       <source src="./samples/ours-control-scale/TXHC_arctic_b0450.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
+        </div>
+        <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+          <h3>Influence of Duration Conditioning</h3>
+          <p class="lead">
+                These samples are intended to check the influence of the duration condition.
+                The codition values are 0.5x, 1.0x, and 1.5x of the source average duration.
+
+                </p>
+          <p class="lead">
+                The duration values are generated without post-processing scaling.
+                The samples were not deployed in the subjective evaluation.
+                </p>
+          <div class="table-responsive" style="overflow-x: scroll">
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Speaker</th>
+                  <th scope="col">BWC</th>
+                  <th scope="col">LXC</th>
+                  <th scope="col">NCC</th>
+                  <th scope="col">TXHC</th>
+                  <th scope="col">BWC</th>
+                  <th scope="col">LXC</th>
+                  <th scope="col">NCC</th>
+                  <th scope="col">TXHC</th>
+                  <th scope="col">BWC</th>
+                  <th scope="col">LXC</th>
+                  <th scope="col">NCC</th>
+                  <th scope="col">TXHC</th>
+                  <th scope="col">BWC</th>
+                  <th scope="col">LXC</th>
+                  <th scope="col">NCC</th>
+                  <th scope="col">TXHC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Text</th>
+                  <td>
+                    <p>He heard a sound which brought him quickly into consciousness of day.</p>
+                  </td>
+                  <td>
+                    <p>A bush chief had died a natural death.</p>
+                  </td>
+                  <td>
+                    <p>Your father's fifth command, he nodded.</p>
+                  </td>
+                  <td>
+                    <p>Suddenly his fingers closed tightly over the handkerchief.</p>
+                  </td>
+                  <td>
+                    <p>But there came no promise from the bow of the canoe.</p>
+                  </td>
+                  <td>
+                    <p>To my dearest and always appreciated friend, I submit myself.</p>
+                  </td>
+                  <td>
+                    <p>It was not a large lake, and almost round.</p>
+                  </td>
+                  <td>
+                    <p>And there was Ethel Baird, whom also you must remember.</p>
+                  </td>
+                  <td>
+                    <p>They are his tongue, by which he makes his knowledge articulate.</p>
+                  </td>
+                  <td>
+                    <p>He moved away as quietly as he had come.</p>
+                  </td>
+                  <td>
+                    <p>I was sick once -- typhoid.</p>
+                  </td>
+                  <td>
+                    <p>But there came no promise from the bow of the canoe.</p>
+                  </td>
+                  <td>
+                    <p>There is not an iota of truth in it, certainly not.</p>
+                  </td>
+                  <td>
+                    <p>A bush chief had died a natural death.</p>
+                  </td>
+                  <td>
+                    <p>Lots of men take women buggy riding.</p>
+                  </td>
+                  <td>
+                    <p>Do you know that you are shaking my confidence in you.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="white-space: nowrap; position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Source</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/BWC_arctic_b0095.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/LXC_arctic_b0383.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/NCC_arctic_b0419.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/TXHC_arctic_a0053.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/BWC_arctic_a0103.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/LXC_arctic_b0450.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/NCC_arctic_a0209.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/TXHC_arctic_b0441.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/BWC_arctic_a0463.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/LXC_arctic_a0045.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/NCC_arctic_a0589.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/TXHC_arctic_a0103.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/BWC_arctic_a0367.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/LXC_arctic_b0383.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/NCC_arctic_b0344.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/source/TXHC_arctic_a0109.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="white-space: nowrap; position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Proposed w/ 0.5x dur.</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/BWC_arctic_b0095.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/LXC_arctic_b0383.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/NCC_arctic_b0419.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/TXHC_arctic_a0053.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/BWC_arctic_a0103.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/LXC_arctic_b0450.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/NCC_arctic_a0209.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/TXHC_arctic_b0441.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/BWC_arctic_a0463.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/LXC_arctic_a0045.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/NCC_arctic_a0589.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/TXHC_arctic_a0103.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/BWC_arctic_a0367.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/LXC_arctic_b0383.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/NCC_arctic_b0344.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x0.5/TXHC_arctic_a0109.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="white-space: nowrap; position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Proposed w/ 1.0x dur.</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/BWC_arctic_b0095.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/LXC_arctic_b0383.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/NCC_arctic_b0419.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/TXHC_arctic_a0053.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/BWC_arctic_a0103.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/LXC_arctic_b0450.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/NCC_arctic_a0209.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/TXHC_arctic_b0441.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/BWC_arctic_a0463.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/LXC_arctic_a0045.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/NCC_arctic_a0589.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/TXHC_arctic_a0103.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/BWC_arctic_a0367.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/LXC_arctic_b0383.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/NCC_arctic_b0344.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.0/TXHC_arctic_a0109.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="white-space: nowrap; position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Proposed w/ 1.5x dur.</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/BWC_arctic_b0095.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/LXC_arctic_b0383.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/NCC_arctic_b0419.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/TXHC_arctic_a0053.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/BWC_arctic_a0103.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/LXC_arctic_b0450.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/NCC_arctic_a0209.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/TXHC_arctic_b0441.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/BWC_arctic_a0463.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/LXC_arctic_a0045.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/NCC_arctic_a0589.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/TXHC_arctic_a0103.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/BWC_arctic_a0367.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/LXC_arctic_b0383.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/NCC_arctic_b0344.gen.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="./samples/dur_x1.5/TXHC_arctic_a0109.gen.wav" type="audio/wav">
                     </audio>
                   </td>
                 </tr>
