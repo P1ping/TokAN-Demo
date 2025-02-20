@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Accent Normalization Demo</title>
+    <link href="/statics/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/statics/my.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+          <h2 style="text-align: center">Accent Normalization Using Self-Supervised Discrete Tokens with Non-Parallel Data<br>
+            <small></small>
+          </h2><br>
+          <h3>Abstract</h3>
+          <p class="lead">
+            Accent normalization converts foreign-accented speech into native-like speech while preserving speaker identity. We propose a novel pipeline using self-supervised discrete tokens and non-parallel training data. The system extracts tokens from source speech, converts them through a dedicated model, and synthesizes the output using flow matching. Our method demonstrates superior performance over a frame-to-frame baseline in naturalness, accentedness reduction, and timbre preservation across multiple English accents. Through token-level phonetic analysis, we validate the effectiveness of our token-based approach. We also develop two duration preservation methods, suitable for applications such as dubbing.
+            </p>
+          <p class="lead">You can download all audio files on this page by cloning this
+            <a href="https://github.com/Tok-AN/Tok-AN.github.io">github repository</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <script src="/statics/jquery/jquery-3.7.1.slim.min.js"></script>
+    <script src="/statics/bootstrap-5.2.3-dist/bootstrap.min.js"></script>
+  </body>
+  <script> $(function(){
+        $("audio").on("play", function() {
+            $("audio").not(this).each(function(index, audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            });
+        });
+    }); </script>
+</html>
