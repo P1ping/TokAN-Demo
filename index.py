@@ -77,6 +77,30 @@ with doc:
                 cls="lead",
             )
 
+        with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
+            from length_control import get_table
+
+            h3("Influence of Duration Conditioning")
+            p(
+                """
+                These samples are intended to check the influence of the duration condition.
+                The codition values are 0.5x, 1.0x, and 1.5x of the source average duration.\n
+                """,
+                cls="lead",
+            )
+            p(
+                """
+                The duration values are generated without post-processing scaling.
+                The samples were not deployed in the subjective evaluation.
+                """,
+                cls="lead",
+            )
+            get_table()
+            p(
+                "* please scroll horizontally to explore additional columns in the table.",
+                cls="lead",
+            )
+
 
 with doc.footer:
     script(src="/statics/jquery/jquery-3.7.1.slim.min.js")
