@@ -39,7 +39,7 @@ with doc:
                 "You can download all audio files on this page by cloning this",
                 a(
                     "github repository",
-                    href="https://github.com/Tok-AN/Tok-AN.github.io",
+                    href="https://p1ping.github.io/TokAN-Demo",
                 ),
                 ".",
                 cls="lead",
