@@ -18,10 +18,10 @@ with doc.head:
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title("Accent Normalization Demo")
     link(
-        href="/statics/bootstrap-5.2.3-dist/css/bootstrap.min.css",
+        href="/TokAN-Demo/statics/bootstrap-5.2.3-dist/css/bootstrap.min.css",
         rel="stylesheet",
     )
-    link(href="/statics/my.css", rel="stylesheet")
+    link(href="/TokAN-Demo/statics/my.css", rel="stylesheet")
 
 with doc:
     # Title and Metadata:
@@ -39,7 +39,7 @@ with doc:
                 "You can download all audio files on this page by cloning this",
                 a(
                     "github repository",
-                    href="https://p1ping.github.io/TokAN-Demo",
+                    href="https://github.com/P1ping/TokAN-Demo",
                 ),
                 ".",
                 cls="lead",
